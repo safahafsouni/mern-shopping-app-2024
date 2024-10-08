@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Build directory
+/build/
+
+# Local configuration files (if any)
+.env.local
