@@ -9,7 +9,7 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run start\" \"npm run client\"  ",
-    "build": "npm install && npm run build --prefix frontend"
+    "build": "npm run build --prefix frontend"
   },
   "author": "Safa Hafsouni",
   "license": "ISC",
