@@ -9,7 +9,7 @@ package-lock.json
 yarn.lock
 
 # Build directories
-/build/
+frontend/build
 
 # dotenv environment variable files
 .env.*

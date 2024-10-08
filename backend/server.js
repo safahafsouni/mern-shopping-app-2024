@@ -10,6 +10,7 @@ const userRoutes = require('./routes/user.route');
 const orderRoutes = require('./routes/order.route');
 const categoryRoutes = require('./routes/category.route');
 const { errorHandler } = require('./middlewares/error.middleware');
+const path = require('path');
 
 dotenv.config(); // Load environment variables
 
@@ -29,6 +30,12 @@ app.use('/api/order', orderRoutes);
 app.use('/api/category', categoryRoutes);
 app.get('/api/config/paypal', (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID);
+});
+
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
 
 const PORT = process.env.PORT || 8080;
