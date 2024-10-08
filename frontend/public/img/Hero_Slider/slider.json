@@ -1,0 +1,22 @@
+{
+    "heroSlider": [
+        {
+            "id": 1,
+            "title": "High-Performance Laptops",
+            "subtitle": "Powerful and portable laptops for all your needs.",
+            "image": "./img/Hero_Slider/images/slider-01.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Wireless Speakers",
+            "subtitle": "Enjoy superior sound quality with our range of wireless speakers.",
+            "image": "./img//Hero_Slider/images/slider-02.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Latest Tablets",
+            "subtitle": "Sleek, fast, and perfect for work or play.",
+            "image": "./img//Hero_Slider/images/slider-03.jpg"
+        }
+    ]
+}
